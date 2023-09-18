@@ -13,18 +13,18 @@ public class FachadaConta implements IFachada {
 	}
 	
 	@Override
-	public void inserirConta(Conta conta) {
-		this.controlador.inserirConta(conta);
+	public boolean inserirConta(Conta conta) {
+		return this.controlador.inserirConta(conta);
 		
 	}
 	@Override
-	public void alterarConta(Conta conta) {
-		this.controlador.alterarConta(conta);
+	public boolean alterarConta(Conta conta) {
+		return this.controlador.alterarConta(conta);
 	}
 
 	@Override
-	public void removerConta(String numero) {
-		this.controlador.removerConta(numero);
+	public boolean removerConta(String numero) {
+		return this.controlador.removerConta(numero);
 	}
 
 	@Override

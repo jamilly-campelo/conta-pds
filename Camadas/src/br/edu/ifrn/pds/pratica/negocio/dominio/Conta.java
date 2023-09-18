@@ -16,8 +16,6 @@ public class Conta {
         this.titular = titular;
         this.saldo = saldo;
     }
-
-        
         
     public String getAgencia() {
         return agencia;
@@ -51,12 +49,6 @@ public class Conta {
         this.saldo = saldo;
     }
 	
-        
-        
-	
-
-    
-
 	@Override
 	public boolean equals(Object obj) {
 		
@@ -69,4 +61,17 @@ public class Conta {
 		
 		return false;
 	}
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Conta{");
+        sb.append("agencia=").append(agencia);
+        sb.append(", numero=").append(numero);
+        sb.append(", titular=").append(titular);
+        sb.append(", saldo=").append(saldo);
+        sb.append('}');
+        return sb.toString();
+    }
+    
 }
